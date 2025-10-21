@@ -3,7 +3,7 @@ import NintendoPage from '../../components/home/NintendoPage';
 import Software from '../../components/home/Software';
 import Switch2Ads from '../../components/home/Switch2Ads';
 import Video from '../../components/home/Video';
-import Visual from '../../components/home/visual';
+import Visual from '../../components/home/Visual';
 
 const Home = () => {
     return (
