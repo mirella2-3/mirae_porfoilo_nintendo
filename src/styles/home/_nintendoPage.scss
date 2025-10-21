@@ -1,0 +1,236 @@
+.nintendo {
+    h1 {
+        font-family: 'Proxima Nova', 'Helvetica Neue', sans-serif;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    h3 {
+        font-family: 'Proxima Nova', 'Helvetica Neue', sans-serif;
+        font-size: 22px;
+        font-style: italic;
+        color: #4e4e4e;
+        text-align: center;
+        margin-bottom: -100px;
+    }
+
+    #wrapper {
+        width: 100%;
+        position: relative;
+        padding: 200px 0 250px 0;
+        box-sizing: border-box;
+        background: #000;
+        // height: 1500px;
+        z-index: 0;
+
+        overflow: hidden;
+        perspective: 0;
+        -webkit-perspective: 1100;
+
+        perspective-origin: 50% 700px;
+        -webkit-perspective-origin: 50% 700px;
+        transition: perspective 1s;
+        -o-transition: -o-perspective 1s;
+        -moz-transition: -moz-perspective 1s;
+        -webkit-transition: -webkit-perspective 1s;
+
+        transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+
+        #image {
+            margin: 0 auto;
+            width: 1200px;
+            height: 600px;
+            transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+            animation: spin 120s infinite linear;
+            -moz-animation: spin 120s infinite linear;
+            -o-animation: spin 120s infinite linear;
+            -webkit-animation: spin 120s infinite linear;
+
+            > .image {
+                position: absolute;
+                width: 90%;
+                height: 100%;
+
+                text-align: center;
+                font-size: 20em;
+                color: #fff;
+                opacity: 0.2;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            > .i1 {
+                transform: rotateY(0deg) translateZ(1200px);
+                -webkit-transform: rotateY(0deg) translateZ(1200px);
+                -moz-transform: rotateY(0deg) translateZ(1200px);
+                -ms-transform: rotateY(0deg) translateZ(1200px);
+                -o-transform: rotateY(0deg) translateZ(1200px);
+            }
+            > .i2 {
+                transform: rotateY(51.43deg) translateZ(1200px);
+                -webkit-transform: rotateY(51.43deg) translateZ(1200px);
+                -moz-transform: rotateY(51.43deg) translateZ(1200px);
+                -ms-transform: rotateY(51.43deg) translateZ(1200px);
+                -o-transform: rotateY(51.43deg) translateZ(1200px);
+            }
+            > .i3 {
+                transform: rotateY(102.86deg) translateZ(1200px);
+                -webkit-transform: rotateY(102.86deg) translateZ(1200px);
+                -moz-transform: rotateY(102.86deg) translateZ(1200px);
+                -ms-transform: rotateY(102.86deg) translateZ(1200px);
+                -o-transform: rotateY(102.86deg) translateZ(1200px);
+            }
+            > .i4 {
+                transform: rotateY(154.29deg) translateZ(1200px);
+                -webkit-transform: rotateY(154.29deg) translateZ(1200px);
+                -moz-transform: rotateY(154.29deg) translateZ(1200px);
+                -ms-transform: rotateY(154.29deg) translateZ(1200px);
+                -o-transform: rotateY(154.29deg) translateZ(1200px);
+            }
+            > .i5 {
+                transform: rotateY(205.71deg) translateZ(1200px);
+                -webkit-transform: rotateY(205.71deg) translateZ(1200px);
+                -moz-transform: rotateY(205.71deg) translateZ(1200px);
+                -ms-transform: rotateY(205.71deg) translateZ(1200px);
+                -o-transform: rotateY(205.71deg) translateZ(1200px);
+            }
+            > .i6 {
+                transform: rotateY(257.14deg) translateZ(1200px);
+                -webkit-transform: rotateY(257.14deg) translateZ(1200px);
+                -moz-transform: rotateY(257.14deg) translateZ(1200px);
+                -ms-transform: rotateY(257.14deg) translateZ(1200px);
+                -o-transform: rotateY(257.14deg) translateZ(1200px);
+            }
+            > .i7 {
+                transform: rotateY(308.57deg) translateZ(1200px);
+                -webkit-transform: rotateY(308.57deg) translateZ(1200px);
+                -moz-transform: rotateY(308.57deg) translateZ(1200px);
+                -ms-transform: rotateY(308.57deg) translateZ(1200px);
+                -o-transform: rotateY(308.57deg) translateZ(1200px);
+            }
+        }
+
+        .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* height: 1160px; */
+            background: #252525;
+            z-index: -100;
+        }
+
+        #wrapTop {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+
+            .nintendoTxt {
+                color: white;
+                margin-top: 50px;
+
+                h2 {
+                    color: #fff;
+                    text-align: center;
+                    font-family: Pretendard;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 90px;
+                }
+
+                strong {
+                    font-weight: 700;
+                    font-size: 130px;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    line-height: 1;
+                    color: transparent;
+                    background: linear-gradient(135deg, white 70%, #e70013 10%);
+                    background-size: 400% 100%;
+                    background-position-x: 0%;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                }
+            }
+
+            .switchBox {
+                position: relative;
+
+                top: 400px;
+                left: 0px;
+                z-index: 10;
+
+                .nintendo-main {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        .switchJoycon {
+            position: relative;
+
+            top: 0px;
+            left: 0px;
+            z-index: 10;
+            img {
+                position: absolute;
+                right: -210px;
+                top: -40px;
+            }
+        }
+
+        /* 메인 슬라이드 스타일 */
+        .main-swiper {
+            width: 451px;
+
+            .main-slide-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                text-align: center;
+            }
+
+            .main-slide-content img {
+                object-fit: cover;
+                width: 451px;
+                height: 254px;
+            }
+        }
+    }
+    .thumbnail {
+        width: 100vw;
+        height: 500px;
+        background: #000;
+    }
+}
+
+// keyframes는 따로 빼서 사용
+@-webkit-keyframes spin {
+    from {
+        transform: rotateY(0) rotateX(0deg);
+        -o-transform: rotateY(0) rotateX(0deg);
+        -ms-transform: rotateY(0) rotateX(0deg);
+        -moz-transform: rotateY(0) rotateX(0deg);
+        -webkit-transform: rotateY(0) rotateX(0deg);
+    }
+    to {
+        transform: rotateY(-360deg) rotateX(0deg);
+        -o-transform: rotateY(-360deg) rotateX(0deg);
+        -ms-transform: rotateY(-360deg) rotateX(0deg);
+        -moz-transform: rotateY(-360deg) rotateX(0deg);
+        -webkit-transform: rotateY(-360deg) rotateX(0deg);
+    }
+}

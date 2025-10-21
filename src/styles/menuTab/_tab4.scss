@@ -1,0 +1,90 @@
+.m4 {
+    .sub4 {
+        h2 {
+            font-size: 20px;
+            font-weight: normal;
+            color: #2d2d2d;
+            width: 1300px;
+            padding-top: 60px;
+            margin: auto;
+
+            strong {
+                font-size: 32px;
+                font-weight: 700;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .sub_inner {
+        width: 100vw;
+        height: 470px;
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+    }
+    ul {
+        display: flex;
+        gap: 60px;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 140px;
+
+        li {
+            cursor: pointer;
+
+            span {
+                display: block;
+                text-align: center;
+                margin-top: 20px;
+                font-size: 20px;
+                color: #555;
+            }
+
+            div {
+                width: 134px;
+                height: 200px;
+                border-radius: 100px;
+                background-size: cover;
+                background-position: center;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.25), inset 0 0 10px rgba(0, 0, 0, 0);
+                transition: 0.4s;
+
+                &.chImg1 {
+                    background-image: url('../images/sub4mario.png');
+                }
+
+                &.chImg2 {
+                    background-image: url('../images/sub4zelda.png');
+                }
+
+                &.chImg3 {
+                    background-image: url('../images/sub4cubby.png');
+                }
+
+                &.chImg4 {
+                    background-image: url('../images/sub4spla.png');
+                }
+
+                &.chImg5 {
+                    background-image: url('../images/sub4picmin.png');
+                }
+
+                &.chImg6 {
+                    background-image: url('../images/sub4animal.png');
+                }
+            }
+
+            &:hover div {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0), inset 0 0 10px rgba(0, 0, 0, 0.25);
+            }
+
+            i {
+                line-height: 240px;
+                font-size: 40px;
+                color: #757575;
+            }
+        }
+    }
+}

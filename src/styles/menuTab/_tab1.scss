@@ -1,0 +1,95 @@
+.m1 {
+    > h2 {
+        width: 155px;
+        position: absolute;
+        // left: 680px;
+    }
+    .sub1 {
+        position: relative;
+        .sub_bg {
+            width: 100vw;
+            height: 710px;
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+        .sub_inner {
+            width: 100vw;
+            height: 710px;
+            position: relative;
+            top: 10px;
+
+            .scroll-clip {
+                padding-top: 170px;
+                img {
+                    width: 300px;
+                }
+                .row1 {
+                    display: flex;
+                    .list {
+                        display: flex;
+                        gap: 20px;
+                    }
+                }
+                .row2 {
+                    display: none;
+                }
+            }
+
+            h2 {
+                position: absolute;
+                top: 60px;
+                left: 812px;
+                font-weight: 400;
+                width: 300px;
+                color: #2d2d2d;
+                font-size: 32px;
+                font-style: normal;
+                line-height: normal;
+                strong {
+                    font-weight: 700;
+                }
+            }
+            span {
+                position: absolute;
+                top: 118px;
+                left: 812px;
+                width: 750px;
+                color: #2d2d2d;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+            }
+        }
+        .sub_wrap {
+            .pic {
+                position: absolute;
+                top: 120px;
+                left: 92px;
+            }
+
+            .more {
+                display: flex;
+                position: absolute;
+                top: 504px;
+                left: 812px;
+                gap: 86px;
+                width: 450px;
+
+                li {
+                    &:nth-child(1) {
+                        width: 90px;
+                    }
+
+                    a {
+                        background: transparent;
+                        border: none;
+                        font-size: 15px;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

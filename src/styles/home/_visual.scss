@@ -1,0 +1,185 @@
+.visual-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    .slide {
+        flex: 1;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.5s ease;
+        margin-left: -400px;
+        position: relative;
+        transition: 0.3s;
+
+        .overlay {
+            width: 200%;
+            height: 100%;
+            background: #000;
+            margin-left: -400px;
+            opacity: 0;
+            transition: 0.5s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        .slide-text {
+            position: absolute;
+            color: #fff;
+            z-index: 10;
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+
+            p {
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                letter-spacing: -0.9px;
+                opacity: 0;
+                transform: translateY(20px);
+                animation-fill-mode: forwards;
+            }
+            h2 {
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                opacity: 0;
+                transform: translateY(20px);
+                animation-fill-mode: forwards;
+            }
+            .allMore {
+                height: 40px;
+                padding: 8px 20px;
+                margin: 0;
+                border-radius: 50px;
+                border: 1px solid #f00;
+                background: #f00;
+                color: #fff;
+                margin-top: 20px;
+                opacity: 0;
+                transform: translateY(20px);
+                animation-fill-mode: forwards;
+            }
+        }
+
+        &.slide1 {
+            clip-path: polygon(0 0, calc(100% - 400px) 0, 110% 160%, 0 100%);
+            z-index: 3;
+            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.8) inset;
+            position: relative;
+            padding-left: 400px;
+
+            .slide-text {
+                right: 320px;
+                bottom: 300px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                pointer-events: none;
+                z-index: 5;
+
+                background: linear-gradient(250deg, rgba(0, 0, 0, 0.7) 26%, rgba(0, 0, 0, 0) 27%),
+                    linear-gradient(180deg, rgba(0, 0, 0, 0.5) 13%, rgba(0, 0, 0, 0) 15%);
+
+                opacity: 1;
+                transition: all 0.3s ease;
+            }
+        }
+
+        &.slide2 {
+            clip-path: polygon(0 0, calc(100% - 400px) 0, 120% 160%, 0 100%);
+            z-index: 2;
+            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.8) inset;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                pointer-events: none;
+                z-index: 5;
+
+                background: linear-gradient(249deg, rgba(0, 0, 0, 0.7) 34%, rgba(0, 0, 0, 0) 35%),
+                    linear-gradient(180deg, rgba(0, 0, 0, 0.5) 13%, rgba(0, 0, 0, 0) 15%);
+
+                opacity: 1;
+                transition: opacity 0.3s ease;
+            }
+            .slide-text {
+                left: 300px;
+                bottom: 300px;
+            }
+        }
+
+        &.slide3 {
+            z-index: 1;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                pointer-events: none;
+                z-index: 5;
+
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 11%, rgba(0, 0, 0, 0) 14%);
+
+                opacity: 1;
+                transition: opacity 0.3s ease;
+            }
+            .slide-text {
+                left: 300px;
+                bottom: 300px;
+            }
+        }
+
+        &.active {
+            flex: 1.3;
+            scale: calc(1.05);
+
+            &::before {
+                background: transparent;
+            }
+            .overlay {
+                opacity: 0.7;
+            }
+
+            .slide-text {
+                opacity: 1;
+                transform: translateY(0);
+                pointer-events: auto;
+
+                p {
+                    animation: fadeUp 0.5s forwards 0.2s;
+                }
+                h2 {
+                    animation: fadeUp 0.5s forwards 0.5s;
+                }
+                .allMore {
+                    animation: fadeUp 0.5s forwards 0.8s;
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,135 @@
+.software {
+    .inner {
+        width: 1400px;
+        padding: 120px 0;
+        margin: auto;
+    }
+
+    .con5Head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+
+        h4 {
+            color: #2d2d2d;
+            font-family: Pretendard;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 14px;
+        }
+        h2 {
+            color: #2d2d2d;
+            font-family: Pretendard;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .edition {
+            display: flex;
+            gap: 20px;
+            cursor: pointer;
+
+            .ed {
+                display: flex;
+                padding: 8px 20px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 50px;
+                border: 1px solid #f00;
+                background: #fff;
+                color: #fe0f0f;
+
+                &.on {
+                    border-radius: 50px;
+                    border: 1px solid #f00;
+                    background: #fe0f0f;
+                    color: #fff;
+                }
+
+                &:hover {
+                    border-radius: 50px;
+                    border: 1px solid #f00;
+                    background: #fe0f0f;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .software {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // width: 1560px;
+        // margin-left: 30px;
+
+        > li {
+            width: 681px;
+            height: 236px;
+            display: flex;
+            margin-bottom: 80px;
+            align-items: center;
+
+            p {
+                overflow: hidden;
+                width: 390px;
+                height: 220px;
+
+                img {
+                    width: 390px;
+                    height: 220px;
+                    transition: 0.5s;
+                    b &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+
+            .textWrap {
+                width: 210px;
+                margin-left: 80px;
+                font-size: 14px;
+                color: #2d2d2d;
+                font-weight: 700;
+                h5 {
+                    font-family: Pretendard;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+
+                span {
+                    display: block;
+                    margin: 16px 0;
+                }
+
+                ul {
+                    display: flex;
+                    gap: 10px;
+                    li {
+                        &:first-child {
+                            position: relative;
+                            &::after {
+                                content: '';
+                                width: 1px;
+                                height: 13px;
+                                background: #000;
+                                display: block;
+                                position: absolute;
+                                top: 50%;
+                                right: -5px;
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

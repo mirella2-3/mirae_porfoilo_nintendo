@@ -1,0 +1,39 @@
+@use './../utils' as *;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pretendard', 'Suit', 'sans-serif';
+    width: 100vw;
+    overflow-x: hidden;
+    // @include paddingX(16px);
+    @include desktop {
+    }
+    @include tablet {
+    }
+}
+.inner {
+    // margin: auto;
+    width: 1600px;
+    box-sizing: border-box;
+}
+html,
+body {
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #fff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #f03e3e;
+        border-radius: 10px;
+    }
+
+    scrollbar-width: thin;
+    scrollbar-color: #f03e3e #fff;
+}

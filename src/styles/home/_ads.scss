@@ -1,0 +1,81 @@
+.Switch2Ads {
+    margin: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+    position: relative;
+    height: 1000px;
+    background-color: transparent;
+
+    .inner {
+        width: 1400px;
+        margin: auto;
+        // padding: 150px 0;
+        padding-top: 150px;
+        box-sizing: border-box;
+        color: #000;
+    }
+
+    h1 {
+        font-size: 90px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    span {
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .allMore {
+        margin: 60px 0 0 0;
+        padding: 5px 38px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #fe0f0f;
+            border: 1px solid #fe0f0f;
+        }
+    }
+
+    .scroll-clip {
+        opacity: 0;
+        transition: opacity 1s ease;
+        height: 300px;
+        overflow: visible; /* 반드시 visible */
+        position: relative;
+        z-index: 9999;
+        transform: rotate(-18deg);
+
+        &.motion {
+            opacity: 1;
+            transition-delay: 0.3s;
+        }
+    }
+
+    .row {
+        display: flex;
+        width: max-content;
+        gap: 20px;
+        margin-bottom: 30px;
+        position: relative;
+
+        z-index: 9999;
+    }
+
+    .list {
+        display: flex;
+        gap: 40px;
+
+        li {
+            width: 550px; /* 이미지 크기 맞춤 */
+            list-style: none;
+            filter: brightness(60%);
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
