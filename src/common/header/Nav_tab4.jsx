@@ -4,8 +4,8 @@ const Nav_tab4 = ({ isActive, onMouseEnter }) => {
     return (
         <li className="m m4" onMouseEnter={onMouseEnter}>
             <h2>Characters</h2>
-            <div className={`sub sub4 ${isActive ? 'on' : ''}`}>
-                {/* <div className={`sub sub4 on`}> */}
+            {/* <div className={`sub sub4 ${isActive ? 'on' : ''}`}> */}
+            <div className={`sub sub4 on`}>
                 <div className="sub_inner">
                     <h2>
                         함께 플레이할 수 있는
